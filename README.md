@@ -1,4 +1,7 @@
 # LLM-based-Phising-Detection
+## Rough system diagram
+![Rough system diagram](https://github.com/hongvincent/LLM-based-Phising-Detection/assets/114135756/3e8afc5f-44a7-4e0f-bef3-ba08d6f5d455)
+
 ## README.md (English)
 
 ### Smishing Detection Solution
