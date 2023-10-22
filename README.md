@@ -7,7 +7,7 @@ This repository contains a smishing detection solution that uses FastAPI and the
 
 #### Files & Description:
 
-1. **smishing_detection_solution(final).py**: 
+1. **llm_based_phishing_detection_solution.py**: 
    - Initializes the FastAPI web application.
    - Extracts URLs from the given SMS text and assesses if these URLs are malicious.
    - If a URL is deemed malicious or unknown, it forwards the URL to the OpenAI GPT model for deeper analysis.
@@ -18,9 +18,9 @@ This repository contains a smishing detection solution that uses FastAPI and the
    ```bash
    pip install fastapi uvicorn openai selenium beautifulsoup4
    ```
-2. Run `smishing_detection_solution(final).py` to start the FastAPI application:
+2. Run `llm_based_phishing_detection_solution.py` to start the FastAPI application:
    ```bash
-   python smishing_detection_solution(final).py
+   python llm_based_phishing_detection_solution.py
    ```
 
 #### Features:
@@ -44,7 +44,7 @@ This repository contains a smishing detection solution that uses FastAPI and the
 - **Response**: 
   - A JSON object containing the analysis of the URLs and the response from the OpenAI GPT model.
 
-### 2. `/llm/`
+### 2. `/llm`
 
 - **Method**: POST
 - **Description**: Extracts URLs from the provided SMS text and requests analysis from the OpenAI GPT model.
@@ -57,7 +57,7 @@ This repository contains a smishing detection solution that uses FastAPI and the
 - **Response**: 
   - A JSON object containing the response from the OpenAI GPT model.
 
-### 3. `/check-sms/`
+### 3. `/check-sms`
 
 - **Method**: POST
 - **Description**: Analyzes the provided SMS text for potential malicious URLs. If a URL is deemed malicious or unknown, the URL is further analyzed using the OpenAI GPT model.
@@ -78,7 +78,7 @@ This repository contains a smishing detection solution that uses FastAPI and the
 
 #### 파일 & 설명:
 
-1. **smishing_detection_solution(final).py**: 
+1. **llm_based_phishing_detection_solution.py**: 
    - FastAPI 웹 애플리케이션을 설정합니다.
    - 주어진 SMS 텍스트에서 URL을 추출하고 이 URL이 악성인지 아닌지를 판단합니다.
    - URL이 악성 또는 알 수 없는 상태인 경우, 이 URL을 OpenAI GPT 모델에 전달하여 추가 분석을 수행합니다.
@@ -89,9 +89,9 @@ This repository contains a smishing detection solution that uses FastAPI and the
    ```bash
    pip install fastapi uvicorn openai selenium beautifulsoup4
    ```
-2. `smishing_detection_solution(final).py` 파일을 실행하여 FastAPI 애플리케이션을 시작합니다:
+2. `llm_based_phishing_detection_solution.py` 파일을 실행하여 FastAPI 애플리케이션을 시작합니다:
    ```bash
-   python smishing_detection_solution(final).py
+   python llm_based_phishing_detection_solution.py
    ```
 
 #### 주요 기능:
@@ -115,7 +115,7 @@ This repository contains a smishing detection solution that uses FastAPI and the
 - **Response**: 
   - URL 분석 결과 및 OpenAI GPT 모델의 응답을 포함한 JSON 객체.
 
-### 2. `/llm/`
+### 2. `/llm`
 
 - **Method**: POST
 - **Description**: 주어진 SMS 텍스트에서 URL을 추출하고 OpenAI GPT 모델에 분석을 요청합니다.
@@ -128,7 +128,7 @@ This repository contains a smishing detection solution that uses FastAPI and the
 - **Response**: 
   - OpenAI GPT 모델의 응답을 포함한 JSON 객체.
 
-### 3. `/check-sms/`
+### 3. `/check-sms`
 
 - **Method**: POST
 - **Description**: 주어진 SMS 텍스트를 분석하여 잠재적인 악성 URL을 확인합니다. URL이 악성 또는 알 수 없는 상태라면, 해당 URL을 OpenAI GPT 모델로 추가 분석합니다.
